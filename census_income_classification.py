@@ -11,8 +11,8 @@ import seaborn as sns
 
 col_names = ['age','workclass','fnlwgt','education','education-num','marital-status','occupation','relationship','race',
             'sex','capital-gain','capital-loss','hours-per-week','native-country','income']
-df_train = pd.read_csv(r"C:\Users\rivanshu\Downloads\adult.data",names = col_names)
-df_test = pd.read_csv(r"C:\Users\rivanshu\Downloads\adult.test",names = col_names)
+df_train = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",names = col_names)
+df_test = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test",names = col_names)
 
 print(df_train.shape)
 print(df_test.shape)
